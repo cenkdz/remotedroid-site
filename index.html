@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remotedroid</title>
+<meta name="description" content="Use your Android phone from your iPhone: its screen, touch and sound.">
+<link rel="icon" href="icon.png">
+<style>
+:root { --bg: #f2f2f7; --card: #ffffff; --ink: #1c1c1e; --quiet: #5f5f66; --accent: #3d5bd9; --line: #e3e3e8; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #000000; --card: #1c1c1e; --ink: #f2f2f7; --quiet: #a9a9b2; --accent: #8fa2ff; --line: #2c2c2e; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 16px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0; }
+h2 { font-size: 20px; margin: 0 0 8px; }
+p, ol { margin: 0 0 12px; }
+p:last-child, ol:last-child { margin-bottom: 0; }
+ol { padding-left: 22px; }
+section { background: var(--card); border-radius: 16px; padding: 20px; margin-bottom: 16px; }
+a { color: var(--accent); }
+.quiet { color: var(--quiet); font-size: 15px; }
+footer { color: var(--quiet); font-size: 15px; padding: 8px 4px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>Remotedroid</h1>
+  </header>
+
+  <section>
+    <p>Use your Android phone from your iPhone: its screen, touch and sound.</p>
+    <p>Remotedroid connects to your Android phone directly, through Android's own wireless debugging. Pair once on the same Wi-Fi; after that it works on that Wi-Fi, or through a VPN both phones already use. Nothing is installed on the Android phone and there is no account.</p>
+    <p class="quiet">Needs Android 11 or later. While you mirror, a small part of scrcpy (open source, Apache License 2.0) runs on your Android phone; it is removed when you stop. Remotedroid is not made by or affiliated with Google.</p>
+  </section>
+
+  <section>
+    <h2>Getting started</h2>
+    <ol>
+      <li>On the Android phone, open Settings › About phone and tap “Build number” seven times. On Samsung it is under About phone › Software information.</li>
+      <li>In Settings › System › Developer options (on Samsung, at the bottom of Settings), turn on “Wireless debugging”.</li>
+      <li>Tap “Pair device with pairing code” and pick the phone in Remotedroid, or type its address.</li>
+    </ol>
+    <p class="quiet">Android turns wireless debugging off when the phone restarts. Remotedroid shows you the way back when that happens.</p>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>A problem, a bug or an idea: <a href="mailto:destek@dyoce.com?subject=Remotedroid">destek@dyoce.com</a></p>
+    <p class="quiet">Please include your Android phone's model and Android version.</p>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>No account, no analytics, no ads. Your two phones talk to each other and to no one else. Details: <a href="privacy/">Privacy policy</a></p>
+  </section>
+
+  <section lang="tr">
+    <h2>Türkçe</h2>
+    <p>Android telefonunu iPhone'dan kullan: ekranı, dokunuşu ve sesiyle. Remotedroid telefona Android'in kendi kablosuz hata ayıklamasıyla doğrudan bağlanır; aynı Wi-Fi'da bir kez eşleştirirsin. Android telefona bir şey kurulmaz, hesap yoktur.</p>
+    <p>Destek: <a href="mailto:destek@dyoce.com?subject=Remotedroid">destek@dyoce.com</a> · <a href="privacy/#tr">Gizlilik politikası</a></p>
+  </section>
+
+  <footer>Developer: Cenk Dönmez</footer>
+</main>
+</body>
+</html>
